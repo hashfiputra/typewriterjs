@@ -23,7 +23,8 @@
   "scripts": {
     "build:prod": "webpack --config ./webpack/production.config.babel.js",
     "build:dev": "webpack --config ./webpack/development.config.babel.js",
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "prepare": "npm run build:prod"
   },
   "peerDependencies": {
     "react": "^17.x || ^18.x || ^19.x",
